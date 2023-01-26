@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Together Vegan - Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded"
+      rel="stylesheet"
+    />
+    <link rel = "icon" href = "images/logo.png" type = "image/x-icon">
+    <style>
+      @import url(contactstyle.css);
+    </style>
+    <script src="https://kit.fontawesome.com/1f2dfdb17b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <!-- Logo -->
+    <div id="container">
+      <header>
+        <nav>
+             
+          <div class="logo">
+            <h4><a href="index.html">
+              <img src="images/logo.png" alt="Together Vegan Logo" srcset="" />
+            </a></h4>
+          </div>
+          <!-- Navigation menu bar -->
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="deliveries.html">Deliveries</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+          <!-- Lines animated -->
+          <div class="lines">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+      <main>
+       
+    <form method="get" action="#">
+      <div class="container">
+          <div class="contact-box">
+            <div class="left"></div>
+              <div class="right">
+               <h2>Contact us</h2>
+               <div class="form-field">
+               <input type="text" class="field" placeholder="First Name" name="first-name" id="first-name" onkeyup="validateFirstName()">
+               <span id="firstname-error"></span>
+               </div>
+               <div class="form-field">
+               <input type="text" class="field" placeholder="Last Name" name="last_name" id="last-name" onkeyup="validateLastName()">
+               <span id="lastname-error"></span>
+               </div>
+               <div class="form-field">
+               <input type="email" class="field" placeholder="Email Address" name="email_address" id="email-address" onkeyup="validateEmail()">
+               <span id="email-error"></span>
+               </div>
+               <div class="form-field">
+               <input type="number" class="field" placeholder="Phone Number" name="phone_number" id="phone-number" onkeyup="validatePhone()">
+               <span id="phonenumber-error"></span>
+              </div>
+              <div class="form-field">
+               <textarea class="field area" placeholder="Message"  name="message" id="message" onkeyup="validateMessage()"></textarea>
+               <span id="message-error"></span>
+              </div>
+               <legend>I would like to receive news and offers from <em>Together Vegan</em> by <em>Email</em></legend>
+               <ul>
+                 <li><label><input id="subscribe" type="checkbox" name="subscribe[]" value="click"></label></li>
+               </ul>
+               <button class="btn" onclick="return validateForm()">Send</button>
+               <span id="btn-error"></span>
+              </div>
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.067943270293!2d-0.18836428428758462!3d51.365047629612015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487607e1cda7cb5f%3A0x8245aa56c2cf5f4f!2sSutton%20SM1%204FY!5e0!3m2!1sen!2suk!4v1654076580102!5m2!1sen!2suk" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+      </div>  
+    </form>
+      
+       <!-- Social Media Links -->
+       <aside class="wrapping">
+        <div><a href="https://www.facebook.com/eusebiu.tamas.391" class="icon facebook">
+          <div class="tooltip">Facebook</div>
+          <img src="images/facebook2.png" alt="" srcset="">
+        </a></div>
+        <div><a href="https://twitter.com/seb_tamas" class="icon twitter">
+          <div class="tooltip">Twitter</div>
+          <img src="images/twitter2.png" alt="" srcset="">
+        </a></div>
+        <div><a href="https://www.instagram.com/doyouvisualise/" class="icon instagram">
+          <div class="tooltip">Instagram</div>
+          <img src="images/instagram2.png" alt="" srcset="">
+        </a></div>
+        <div><a href="https://www.linkedin.com/in/eusebiu-tamas-21294b184/" class="icon linkedin">
+          <div class="tooltip">LinkedIn</div>
+          <img src="images/linkedin2.png" alt="" srcset="">
+        </a></div>
+      </aside>
+    </main>
+
+      <footer>
+      <p>All content copyright &copy; 2022, Together Vegan.</p>
+      </footer>
+    
+    <script src="contactapp.js"></script>
+  </body>
+</html>
